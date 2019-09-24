@@ -1,0 +1,113 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../images/pano.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    font-family: Bahnschrift, sans-serif;
+    text-align: center;
+    display: block;
+    padding-top: auto;
+    padding-bottom: auto;
+    padding-right: 50px;
+}
+
+li a:link, li a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+li a:hover, li a:active {
+    color: #000;
+    text-decoration: underline;
+}
+
+.menureference {
+    position: fixed;
+    padding-top: auto;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #FFF;
+    border-bottom-style: solid;
+    border-bottom-color: #EEE;
+}
+
+.infopage {
+    margin-top: 40vh;
+    padding: 0;
+    background-color: #FFF;
+    height: 100%;
+}
+
+.infobody {
+    width: 80%;
+    margin: 0 auto 0 auto;
+}
+
+.infobody h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: Bahnschrift, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.infobody p {
+    font-size: 22px;
+    font-family: Bahnschrift, sans-serif;
+    text-indent: 50px;
+}
+
+.profilepic {
+    position: relative;
+    top: -125px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+}
+
+.namecenter {
+    position: relative;
+    margin: 0;
+    top: -120px;
+    text-align: center;
+    font-family: Bahnschrift, sans-serif;
+}
+
+.titlecenter {
+    position: relative;
+    margin: 0;
+    top: -125px;
+    text-align: center;
+    font-family: Bahnschrift, sans-serif;
+}
+
+.menulogo {
+    height: 80%;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 50px;
+    float: left;
+}
