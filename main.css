@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-    background-image: url("../images/pano.jpg");
+    background-image: url("images/pano.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
