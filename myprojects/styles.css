@@ -55,11 +55,16 @@ li a:hover, li a:active {
     float: left;
 }
 
-.project-feed {
+.margin20 {
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: auto;
-    margin-bottom: auto;
+    padding: 5%;
     height: 100%;
     background-color: #FFF;
+}
+
+.project-feed {
+    margin: 5%;
+    background-color: #333;
+    height: 90%
 }
