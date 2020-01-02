@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>D&D Stat Calculator 5e</title>
+        <script src="stat_calculator.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <form action="submit_form.php">
+            Proficiency Bonus:
+            <input type="number" id="proficiency" value="0">
+            <br><br>Strength:<br>
+            <input type="number" id="strength" value="0" style="margin-right: 5px" onchange="calculateModifier('strength', 'strmod')">
+            <output id="strmod">-5</output>
+            <br>Dexterity:<br>
+            <input type="number" id="dexterity" value="0" style="margin-right: 5px" onchange="calculateModifier('dexterity', 'dexmod')">
+            <output id="dexmod">-5</output>
+            <br>Constitution:<br>
+            <input type="number" id="constitution" value="0" style="margin-right: 5px" onchange="calculateModifier('constitution', 'conmod')">
+            <output id="conmod">-5</output>
+            <br>Intelligence:<br>
+            <input type="number" id="intelligence" value="0" style="margin-right: 5px" onchange="calculateModifier('intelligence', 'intmod')">
+            <output id="intmod">-5</output>
+            <br>Wisdom:<br>
+            <input type="number" id="wisdom" value="0" style="margin-right: 5px" onchange="calculateModifier('wisdom', 'wismod')">
+            <output id="wismod">-5</output>
+            <br>Charisma:<br>
+            <input type="number" id="charisma" value="0" style="margin-right: 5px" onchange="calculateModifier('charisma', 'chamod')">
+            <output id="chamod">-5</output>
+        </form>
+    </body>
+</html>
