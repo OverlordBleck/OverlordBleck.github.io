@@ -1,4 +1,4 @@
-function calculateModifier(element, out) {
+function calcModifier(element) {
     var str, mod, text;
     str = document.getElementById(element).value;
     text = mod = Math.floor((str/2)-5);
@@ -7,5 +7,5 @@ function calculateModifier(element, out) {
         text = "+" + text
     }
 
-    document.getElementById(out).innerHTML = text;
+    document.getElementById(element + "mod").innerHTML = text;
 }

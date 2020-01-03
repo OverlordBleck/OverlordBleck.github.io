@@ -3,36 +3,44 @@
 <html>
     <head>
         <title>D&D Stat Calculator 5e</title>
+        <link rel="stylesheet" href="style.css">
         <script src="stat_calculator.js" type="text/javascript"></script>
     </head>
     <body>
         <form action="submit_form.php">
             Proficiency Bonus:
-            <input type="number" id="proficiency" value="0">
+            <input type="number" id="pro" value="0">
 
             <br><br>Strength:<br>
-            <input type="number" id="strength" value="0" style="margin-right: 5px" onchange="calculateModifier('strength', 'strmod')">
+            <input type="number" id="str" value="0" onchange="calcModifier('str')">
             <output id="strmod">-5</output>
 
             <br>Dexterity:<br>
-            <input type="number" id="dexterity" value="0" style="margin-right: 5px" onchange="calculateModifier('dexterity', 'dexmod')">
+            <input type="number" id="dex" value="0" onchange="calcModifier('dex')">
             <output id="dexmod">-5</output>
 
             <br>Constitution:<br>
-            <input type="number" id="constitution" value="0" style="margin-right: 5px" onchange="calculateModifier('constitution', 'conmod')">
+            <input type="number" id="con" value="0" onchange="calcModifier('con')">
             <output id="conmod">-5</output>
 
             <br>Intelligence:<br>
-            <input type="number" id="intelligence" value="0" style="margin-right: 5px" onchange="calculateModifier('intelligence', 'intmod')">
+            <input type="number" id="int" value="0" onchange="calcModifier('int')">
             <output id="intmod">-5</output>
 
             <br>Wisdom:<br>
-            <input type="number" id="wisdom" value="0" style="margin-right: 5px" onchange="calculateModifier('wisdom', 'wismod')">
+            <input type="number" id="wis" value="0" onchange="calcModifier('wis')">
             <output id="wismod">-5</output>
-            
+
             <br>Charisma:<br>
-            <input type="number" id="charisma" value="0" style="margin-right: 5px" onchange="calculateModifier('charisma', 'chamod')">
+            <input type="number" id="cha" value="0" onchange="calcModifier('cha')">
             <output id="chamod">-5</output>
+
+            <br><br><br>
+            Saving Throws: <br>
+            
+            <input type="checkbox" name="prostr" id="prosavstr">
+            Strength
+            <output id="savstr"></output>
         </form>
     </body>
 </html>
