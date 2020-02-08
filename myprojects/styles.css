@@ -1,9 +1,12 @@
 html, body {
-    margin: 0;
-    padding: 0;
+    height: 100vh;
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    top: 50px;
+    max-height: 100%;
     background-image: url("../images/pano.jpg");
     background-size: cover;
     background-attachment: fixed;
@@ -26,6 +29,10 @@ li a {
     padding-right: 50px;
 }
 
+h1, b, text, p {
+    font-family: Bahnschrift, sans-serif;
+}
+
 li a:link, li a:visited {
     color: #000;
     text-decoration: none;
@@ -38,7 +45,6 @@ li a:hover, li a:active {
 
 .menureference {
     position: fixed;
-    padding-top: auto;
     top: 0;
     width: 100%;
     height: 50px;
@@ -56,15 +62,55 @@ li a:hover, li a:active {
 }
 
 .margin20 {
+    box-sizing: border-box;
     margin-left: 20%;
     margin-right: 20%;
     padding: 5%;
-    height: 100%;
+    min-height: 100%;
     background-color: #FFF;
 }
 
-.project-feed {
-    margin: 5%;
-    background-color: #333;
-    height: 90%
+.margin20 p {
+    color: grey;
+}
+
+.feed-background {
+    margin: 0 0 15px 0;
+    box-shadow: 0 0 10px #b1b1b1;
+    border-radius: 10px;
+    height: auto;
+}
+
+.feed-background .header {
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+}
+
+.header p {
+    margin: 8px 0 8px 0;
+}
+
+.content iframe {
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+}
+
+.feed-background .reference {
+    box-sizing: border-box;
+    padding: 2px 10px 2px 10px;
+    height: 40px;
+}
+
+.reference a {
+    text-decoration: none;
+}
+
+.reference a img {
+    height: 32px;
+}
+
+.hidden {
+    display: none;
 }

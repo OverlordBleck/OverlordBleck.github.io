@@ -4,7 +4,7 @@ function calcModifier(element) {
     text = mod = Math.floor((str/2)-5);
 
     if (mod >= 0) {
-        text = "+" + text
+        text = "+" + text;
     }
 
     document.getElementById(element + "mod").innerHTML = text;
