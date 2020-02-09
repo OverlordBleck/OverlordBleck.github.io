@@ -4,32 +4,36 @@
     <head>
         <title>Logan Learner - Projects</title>
         <link rel="stylesheet" href="styles.css">
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-        <!-- <script type="text/javascript" src="feed.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
     <body>
-        <div class="margin20">
+        <div class="margin20" id="display">
             <h1>My Projects</h1>
             <p id="isHere" class="hidden">Looks like there's nothing here...</p>
-            <div class="feed-background">
-                <div class="header">
-                    <b>Why</b>
-                    <p>This is a multiline :)</p>
-                </div>
-                <div class="content">
-                    <iframe src="https://www.youtube.com/embed/rXfKWIZQIo4" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="reference">
-                    <div align="right">
-                        <a href="https://github.com/loganlearner/" target="_blank">
-                            <img src="../images/github_logo.png"/>
-                        </a>
-                        <a href="https://youtu.be/rXfKWIZQIo4" target="_blank">
-                            <img src="../images/youtube_logo.png"/>
-                        </a>
+
+            <template id="card">
+                <div class="feed-background">
+                    <div class="header">
+                        <b></b>
+                        <p></p>
+                    </div>
+                    <div class="content">
+                        <iframe src="https://www.youtube.com/embed/" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="reference">
+                        <div align="right">
+                            <a id="ghlink" href="" target="_blank">
+                                <img src="../images/github_logo.png"/>
+                            </a>
+                            <a id="ytlink" href="https://youtu.be/" target="_blank">
+                                <img src="../images/youtube_logo.png"/>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </template>
+            
+            <script type="text/javascript" src="feed.js"></script>
         </div>
         <div class="menureference">
             <a href="../index.html"><img class="menulogo" src="../images/logo.png"></a>
