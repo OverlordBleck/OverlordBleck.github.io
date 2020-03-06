@@ -1,23 +1,3 @@
-// <div class="feed-background">
-//     <div class="header">
-//         <b>Why</b>
-//         <p>This is a multiline :)</p>
-//     </div>
-//     <div class="content">
-//         <iframe src="https://www.youtube.com/embed/rXfKWIZQIo4" frameborder="0" allowfullscreen></iframe>
-//     </div>
-//     <div class="reference">
-//         <div align="right">
-//             <a href="https://github.com/loganlearner/" target="_blank">
-//                 <img src="../images/github_logo.png"/>
-//             </a>
-//             <a href="https://youtu.be/rXfKWIZQIo4" target="_blank">
-//                 <img src="../images/youtube_logo.png"/>
-//             </a>
-//         </div>
-//     </div>
-// </div>
-
 function createCard(title, description, githublink, youtubeid) {
     var parent = document.getElementById("display")
     var temp = document.getElementById("card")
@@ -45,7 +25,7 @@ function createCard(title, description, githublink, youtubeid) {
 
 
 function onLoad(data, status, xhr) {
-    var tab = JSON.parse(data)
+    var tab = data //JSON.parse(data)
 
     for (var i = 0; i < tab.length; i++) {
         var k = tab[i]
@@ -54,4 +34,4 @@ function onLoad(data, status, xhr) {
     }
 }
 
-$.get("data.txt", null, onLoad)
+$.get("data.json", null, onLoad)
