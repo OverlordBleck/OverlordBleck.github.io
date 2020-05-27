@@ -1,14 +1,20 @@
 [
     {
-        "githubLink": "https://github.com/loganlearner/loganlearner.github.io",
+        "projectName": "This very website",
         "projectDescription": "Created from the ground up I made this website as a central hub for projects ranging from finished work to projects I am currently working on.",
-        "projectName": "This Very Website",
+        "githubLink": "https://github.com/loganlearner/loganlearner.github.io",
         "youtubeID": ""
     },
     {
-        "githubLink": "https://github.com/loganlearner/pac3restrictor",
+        "projectName": "[Lua] Quick PAC3 Restrictor",
         "projectDescription": "An addon created for the game Garry's Mod that resticts players of certain groups to use the PAC3 editor.",
-        "projectName": "Quick PAC3 Restrictor",
+        "githubLink": "https://github.com/loganlearner/pac3restrictor",
+        "youtubeID": ""
+    },
+    {
+        "projectName": "[Lua] Starfall DarkRP library",
+        "projectDescription": "This is an addon created for Garry's Mod where it defines helpful functions for the DarkRP gamemode.",
+        "githubLink": "https://github.com/loganlearner/starfall-darkrp-library",
         "youtubeID": ""
     }
 ]
