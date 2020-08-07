@@ -4,6 +4,7 @@
     <head>
         <title>Logan Learner</title>
         <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155135522-1"></script>
         <script>
@@ -15,25 +16,28 @@
     </head>
 
     <body>
-        <div class="infopage">
-            <img class="profilepic" src="images/me.jpg">
-            <h1 class="namecenter">Logan Learner</h1>
-            <h2 class="titlecenter">Computer Programmer</h2>
+        <div class="row h-100 w-100 mx-0">
+            <div class="col-md-3 bg-dark">
+                <div class="w-100">
+                    <a class="text-center" style="display: block;" href="">
+                        <img src="images/logo.png" width="50" height="50" class="d-inline-block align-top" alt="" loading="lazy">
+                    </a>
+                </div>
 
-            <div class="infobody" name="aboutme">
-                    <h1>About Me</h1>
-                    <p>This site is still under development.</p>
+                <nav class="navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <button href="" type="button" class="btn-homebar">
+                                <div class="w-75">
+                                    Home
+                                </div>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </div>
-
-        <div class="menureference">
-            <a href="index.html"><img class="menulogo" src="images/logo.png"></a>
-            <ul>
-                <li><a href="#aboutme">About Me</a></li>
-                <li><a href="myprojects/index.html">My Projects</a></li>
-                <li><a href="tools/index.html">Tools</a></li>
-                <li><a href="contactinfo/index.html">Contact Info</a></li>
-            </ul>
+            <div class="col-md-9">
+            </div>
         </div>
     </body>
 </html>
